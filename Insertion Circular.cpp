@@ -16,7 +16,6 @@ class CircularLinkedList
     {
       elemen* data = new elemen;
       data->isi = nilai;
-      data->berikut = NULL;
 
       if (nilai == 1)
         pokok = data;
@@ -31,7 +30,7 @@ class CircularLinkedList
     void display()
     {
       elemen* sementara = pokok;
-      while(sementara != NULL)
+      while(sementara != 0)
       {
         cout << sementara->isi << " ";
         sementara = sementara->berikut;
